@@ -4,7 +4,7 @@ We add 2 files:
 
 they are the same, but the names are different.
 
-latgen-biglm-faster-mapped.cc  is the name used in THUYG-20's original recipes.
+latgen-biglm-faster-mapped is the name used in THUYG-20's original recipes.
 
 MLDG-Decoder.cc is the name used in our paper.
 
