@@ -1,0 +1,57 @@
+#!/bin/bash
+
+for x in exp/{mono,tri1,tri2b,tri3b,tri4b,tri4b_dnn,tri4b_dnn_mpe}/decode_test_word* ; do [ -d $x ] && grep WER $x/wer_* | utils/best_wer.sh; done
+#clean mono,tri1,tri2b,tri3b,GMM model,DNN model,MPE model
+#clean test data
+#word task
+%WER 49.82 [ 8529 / 17119, 265 ins, 1801 del, 6463 sub ] exp/mono/decode_test_word/wer_9_0.0
+%WER 29.94 [ 5126 / 17119, 393 ins, 662 del, 4071 sub ] exp/tri1/decode_test_word/wer_12_0.0
+%WER 26.26 [ 4495 / 17119, 374 ins, 522 del, 3599 sub ] exp/tri2b/decode_test_word/wer_13_0.0
+%WER 28.42 [ 4865 / 17119, 497 ins, 533 del, 3835 sub ] exp/tri3b/decode_test_word/wer_13_0.0
+%WER 27.90 [ 4776 / 17119, 436 ins, 556 del, 3784 sub ] exp/tri3b/decode_test_word.si/wer_12_0.0
+%WER 26.25 [ 4494 / 17119, 492 ins, 472 del, 3530 sub ] exp/tri4b/decode_test_word/wer_14_0.0
+%WER 25.49 [ 4364 / 17119, 393 ins, 496 del, 3475 sub ] exp/tri4b/decode_test_word.si/wer_14_0.0
+%WER 20.19 [ 3456 / 17119, 395 ins, 289 del, 2772 sub ] exp/tri4b_dnn/decode_test_word/wer_11_0.0
+%WER 20.08 [ 3437 / 17119, 394 ins, 283 del, 2760 sub ] exp/tri4b_dnn_mpe/decode_test_word_it1/wer_11_0.0
+%WER 19.90 [ 3407 / 17119, 394 ins, 275 del, 2738 sub ] exp/tri4b_dnn_mpe/decode_test_word_it2/wer_11_0.0
+%WER 19.71 [ 3374 / 17119, 391 ins, 269 del, 2714 sub ] exp/tri4b_dnn_mpe/decode_test_word_it3/wer_11_0.0
+exit 0
+
+for x in exp/{mono,tri1,tri2b,tri3b,tri4b,tri4b_dnn,tri4b_dnn_mpe}/decode_test_morpheme* ; do [ -d $x ] && grep WER $x/wer_* | utils/best_wer.sh; done
+#DNN model,MPE model
+#clean test data
+#morpheme task
+%WER 50.29 [ 8610 / 17119, 171 ins, 2167 del, 6272 sub ] exp/mono/decode_test_morpheme/wer_9_penalty_0.0
+%WER 27.64 [ 4731 / 17119, 170 ins, 797 del, 3764 sub ] exp/tri1/decode_test_morpheme/wer_12_penalty_0.0
+%WER 23.41 [ 4007 / 17119, 180 ins, 591 del, 3236 sub ] exp/tri2b/decode_test_morpheme/wer_12_penalty_0.0
+%WER 27.57 [ 4720 / 17119, 203 ins, 781 del, 3736 sub ] exp/tri3b/decode_test_morpheme/wer_13_penalty_0.0
+%WER 25.08 [ 4294 / 17119, 202 ins, 679 del, 3413 sub ] exp/tri4b/decode_test_morpheme/wer_13_penalty_0.0
+%WER 16.70 [ 2859 / 17119, 161 ins, 380 del, 2318 sub ] exp/tri4b_dnn/decode_test_morpheme/wer_11_penalty_0.0
+%WER 16.39 [ 2806 / 17119, 149 ins, 371 del, 2286 sub ] exp/tri4b_dnn_mpe/decode_test_morpheme_it1/wer_11_penalty_0.0
+%WER 15.98 [ 2736 / 17119, 160 ins, 331 del, 2245 sub ] exp/tri4b_dnn_mpe/decode_test_morpheme_it2/wer_12_penalty_0.0
+%WER 15.98 [ 2736 / 17119, 160 ins, 331 del, 2245 sub ] exp/tri4b_dnn_mpe/decode_test_morpheme_it3/wer_10_penalty_0.0
+exit 0
+
+for x in exp/{tri4b_dnn,tri4b_dnn_0_10_white_car_cafe_clean}/decode_word_0db/{white,car,cafe}; do [ -d $x ] && grep WER $x/wer_* | utils/best_wer.sh; done
+#clean DNN model and noise training model
+#0db noise test data
+#word task
+%WER 99.62 [ 17054 / 17119, 7 ins, 14447 del, 2600 sub ] exp/tri4b_dnn/decode_word_0db/white/wer_4_0.0
+%WER 21.93 [ 3755 / 17119, 409 ins, 350 del, 2996 sub ] exp/tri4b_dnn/decode_word_0db/car/wer_11_0.0
+%WER 79.25 [ 13567 / 17119, 247 ins, 6645 del, 6675 sub ] exp/tri4b_dnn/decode_word_0db/cafe/wer_10_0.0
+%WER 47.75 [ 8174 / 17119, 378 ins, 1468 del, 6328 sub ] exp/tri4b_dnn_0_10_white_car_cafe_clean/decode_word_0db/white/wer_9_0.0
+%WER 21.12 [ 3616 / 17119, 376 ins, 342 del, 2898 sub ] exp/tri4b_dnn_0_10_white_car_cafe_clean/decode_word_0db/car/wer_10_0.5
+%WER 45.16 [ 7731 / 17119, 473 ins, 1461 del, 5797 sub ] exp/tri4b_dnn_0_10_white_car_cafe_clean/decode_word_0db/cafe/wer_10_0.0
+exit 0
+
+for x in exp/{tri4b_dnn,tri4b_dnn_0_10_white_car_cafe_clean}/decode_morpheme_0db/{white,car,cafe}; do [ -d $x ] && grep WER $x/wer_* | utils/best_wer.sh; done
+#clean DNN model and noise training model
+#0db noise test data
+#morpheme task
+%WER 99.68 [ 17065 / 17119, 11 ins, 14492 del, 2562 sub ] exp/tri4b_dnn/decode_morpheme_0db/white/wer_4_penalty_0.0
+%WER 18.25 [ 3124 / 17119, 166 ins, 431 del, 2527 sub ] exp/tri4b_dnn/decode_morpheme_0db/car/wer_11_penalty_0.0
+%WER 79.78 [ 13657 / 17119, 165 ins, 7460 del, 6032 sub ] exp/tri4b_dnn/decode_morpheme_0db/cafe/wer_11_penalty_0.0
+%WER 47.02 [ 8049 / 17119, 238 ins, 1780 del, 6031 sub ] exp/tri4b_dnn_0_10_white_car_cafe_clean/decode_morpheme_0db/white/wer_9_penalty_0.0
+%WER 17.72 [ 3034 / 17119, 164 ins, 386 del, 2484 sub ] exp/tri4b_dnn_0_10_white_car_cafe_clean/decode_morpheme_0db/car/wer_11_penalty_0.0
+%WER 43.75 [ 7489 / 17119, 343 ins, 1578 del, 5568 sub ] exp/tri4b_dnn_0_10_white_car_cafe_clean/decode_morpheme_0db/cafe/wer_9_penalty_0.0
+exit 0
