@@ -1,9 +1,11 @@
 We add 2 files:
-latgen-biglm-faster-mapped.cc
-MLDG-Decoder.cc
+1. latgen-biglm-faster-mapped.cc
+2. MLDG-Decoder.cc
 
 they are the same, but the names are different.
+
 latgen-biglm-faster-mapped.cc  is the name used in THUYG-20's original recipes.
+
 MLDG-Decoder.cc is the name used in our paper.
 
 To use the morpheme-based decoder, You have to:
