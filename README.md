@@ -6,7 +6,7 @@ they are the same, but the names are different.
 
 latgen-biglm-faster-mapped is the name used in THUYG-20's original recipes.
 
-MLDG-Decoder.cc is the name used in our paper.
+MLDG-Decoder is the name used in our paper.
 
 To use the morpheme-based decoder, You have to:
 1) build Kaldi with latgen-biglm-faster-mapped.cc in the src/bin fold
