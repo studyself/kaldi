@@ -7,7 +7,7 @@ The two morpheme-based decoders have been added into src/bin and src/bin/Makefil
 1. latgen-biglm-faster-mapped.cc
 2. MLDG-Decoder.cc
 3. They will be built while the toolkit is built. 
-4. they are the same in contents, but the names are different.
+4. They are the same in contents, but the names are different.
 5. latgen-biglm-faster-mapped is the name used in THUYG-20's original recipes.
 6. MLDG-Decoder is the name used in our paper.
 
