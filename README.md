@@ -10,7 +10,7 @@ We add 2 files:
 1. latgen-biglm-faster-mapped.cc
 2. MLDG-Decoder.cc
 
-they are the same, but the names are different.
+they are the same in contents, but the names are different.
 
 latgen-biglm-faster-mapped is the name used in THUYG-20's original recipes.
 
