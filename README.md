@@ -21,7 +21,6 @@ To use the morpheme-based decoder, You have to:
 2) run THUYG-20 scripts in egs/thuyg20 to test the decoder.
 3) latgen-biglm-faster-mapped is used in decode_biglm.sh
 
-[![Build Status](https://travis-ci.com/kaldi-asr/kaldi.svg?branch=master)](https://travis-ci.com/kaldi-asr/kaldi)
 MLDG-Decoder for THUYG-20
 ================================
 
