@@ -1,89 +1,20 @@
 MLDG-Decoder for THUYG-20
+================================
+This is the source code for our paper: Improving Uyghur ASR systems with decoders using morpheme-based LMs. 
 
-THUYG-20 Data:
-https://openslr.org/22/
-
-THUYG-20 recipes:
-egs/thuyg20
-
-We add 2 files:
+Follow Kaldi's guide to build the toolkit. 
+The two morpheme-based decoders have been added into src/bin and src/bin/Makefile.
 1. latgen-biglm-faster-mapped.cc
 2. MLDG-Decoder.cc
-
+They will be built while the toolkit is built. 
 they are the same in contents, but the names are different.
-
 latgen-biglm-faster-mapped is the name used in THUYG-20's original recipes.
-
 MLDG-Decoder is the name used in our paper.
 
-To use the morpheme-based decoder, You have to:
-1) build Kaldi with latgen-biglm-faster-mapped.cc in src/bin
-2) run THUYG-20 scripts in egs/thuyg20 to test the decoder.
-3) latgen-biglm-faster-mapped is used in decode_biglm.sh
-
-MLDG-Decoder for THUYG-20
-================================
-
-To build the toolkit: see `./INSTALL`.  These instructions are valid for UNIX
-systems including various flavors of Linux; Darwin; and Cygwin (has not been
-tested on more "exotic" varieties of UNIX).  For Windows installation
-instructions (excluding Cygwin), see `windows/INSTALL`.
-
-To run the example system builds, see `egs/README.txt`
-
-If you encounter problems (and you probably will), please do not hesitate to
-contact the developers (see below). In addition to specific questions, please
-let us know if there are specific aspects of the project that you feel could be
-improved, that you find confusing, etc., and which missing features you most
-wish it had.
-
-Kaldi information channels
+THUYG-20 Data:
 --------------------------
+It's free for download at: https://openslr.org/22/
 
-For HOT news about Kaldi see [the project site](http://kaldi-asr.org/).
-
-[Documentation of Kaldi](http://kaldi-asr.org/doc/):
-- Info about the project, description of techniques, tutorial for C++ coding.
-- Doxygen reference of the C++ code.
-
-[Kaldi forums and mailing lists](http://kaldi-asr.org/forums.html):
-
-We have two different lists
-- User list kaldi-help
-- Developer list kaldi-developers:
-
-To sign up to any of those mailing lists, go to
-[http://kaldi-asr.org/forums.html](http://kaldi-asr.org/forums.html):
-
-
-Development pattern for contributors
+THUYG-20 recipes:
 ------------------------------------
-
-1. [Create a personal fork](https://help.github.com/articles/fork-a-repo/)
-   of the [main Kaldi repository](https://github.com/kaldi-asr/kaldi) in GitHub.
-2. Make your changes in a named branch different from `master`, e.g. you create
-   a branch `my-awesome-feature`.
-3. [Generate a pull request](https://help.github.com/articles/creating-a-pull-request/)
-   through the Web interface of GitHub.
-4. As a general rule, please follow [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html).
-   There are a [few exceptions in Kaldi](http://kaldi-asr.org/doc/style.html).
-   You can use the [Google's cpplint.py](https://raw.githubusercontent.com/google/styleguide/gh-pages/cpplint/cpplint.py)
-   to verify that your code is free of basic mistakes.
-
-Platform specific notes
------------------------
-
-### PowerPC 64bits little-endian (ppc64le)
-
-- Kaldi is expected to work out of the box in RHEL >= 7 and Ubuntu >= 16.04 with
-  OpenBLAS, ATLAS, or CUDA.
-- CUDA drivers for ppc64le can be found at [https://developer.nvidia.com/cuda-downloads](https://developer.nvidia.com/cuda-downloads).
-- An [IBM Redbook](https://www.redbooks.ibm.com/abstracts/redp5169.html) is
-  available as a guide to install and configure CUDA.
-
-### Android
-
-- Kaldi supports cross compiling for Android using Android NDK, clang++ and
-  OpenBLAS.
-- See [this blog post](http://jcsilva.github.io/2017/03/18/compile-kaldi-android/)
-  for details.
+You can run the scripts in egs/thuyg20 to reproduce our experimental results.
