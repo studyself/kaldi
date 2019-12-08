@@ -22,7 +22,7 @@ To use the morpheme-based decoder, You have to:
 3) latgen-biglm-faster-mapped is used in decode_biglm.sh
 
 [![Build Status](https://travis-ci.com/kaldi-asr/kaldi.svg?branch=master)](https://travis-ci.com/kaldi-asr/kaldi)
-Kaldi Speech Recognition Toolkit
+MLDG-Decoder for THUYG-20
 ================================
 
 To build the toolkit: see `./INSTALL`.  These instructions are valid for UNIX
