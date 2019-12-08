@@ -1,3 +1,5 @@
+MLDG-Decoder for THUYG-20
+
 We add 2 files:
 1. latgen-biglm-faster-mapped.cc
 2. MLDG-Decoder.cc
