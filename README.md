@@ -15,10 +15,15 @@ THUYG-20 Data:
 --------------------------
 It's free for download at: https://openslr.org/22/
 
+
+
 Original wrk on THUYG-20 by Dong Wang:
 ------------------------------------
 https://github.com/wangdong99/kaldi
-The morpheme-based decoder is missing there.
+1. The morpheme-based decoder is missing there.
+2. The morpheme-based decoder cann't be found in Kaldi's source code: https://github.com/kaldi-asr/kaldi/tree/master/src/bin
+
+
 
 
 THUYG-20 recipes:
