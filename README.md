@@ -21,7 +21,7 @@ Original wrk on THUYG-20 by Dong Wang:
 ------------------------------------
 https://github.com/wangdong99/kaldi
 1. The morpheme-based decoder is missing there.
-2. The morpheme-based decoder cann't be found in Kaldi's source code: https://github.com/kaldi-asr/kaldi/tree/master/src/bin
+2. The morpheme-based decoder cann't be found in Kaldi's source code neither: https://github.com/kaldi-asr/kaldi/tree/master/src/bin
 
 
 
