@@ -1,16 +1,8 @@
 results for word-based decoding:
-%WER 50.36 [ 8621 / 17119, 325 ins, 1626 del, 6670 sub ] exp/mono/decode_test_word/wer_8_0.0
-%WER 26.29 [ 4501 / 17119, 379 ins, 541 del, 3581 sub ] exp/tri1/decode_test_word/wer_13_0.0
-%WER 24.08 [ 4122 / 17119, 375 ins, 457 del, 3290 sub ] exp/tri2b/decode_test_word/wer_15_0.0
 %WER 19.55 [ 3346 / 17119, 400 ins, 264 del, 2682 sub ] exp/tri2b_dnn_7Ls_2048/decode_test_word/wer_11_0.0
 %WER 18.45 [ 3158 / 17119, 357 ins, 294 del, 2507 sub ] exp/tri2b_dnn_mpe_7Ls_2048/decode_test_word_it40/wer_12_0.5
 
 results for morpheme-based decoding:
-%WER 50.76 [ 8690 / 17119, 197 ins, 2074 del, 6419 sub ] exp/mono_bak191020/decode_test_morpheme/wer_8_penalty_0.0
-%WER 50.76 [ 8690 / 17119, 197 ins, 2074 del, 6419 sub ] exp/mono/decode_test_morpheme/wer_8_penalty_0.0
-%WER 23.97 [ 4103 / 17119, 168 ins, 623 del, 3312 sub ] exp/tri1/decode_test_morpheme/wer_13_penalty_0.0
-%WER 21.02 [ 3598 / 17119, 161 ins, 507 del, 2930 sub ] exp/tri2b/decode_test_morpheme/wer_13_penalty_0.0
-
 %WER 15.46 [ 2646 / 17119, 150 ins, 331 del, 2165 sub ] exp/tri2b_dnn_7Ls_2048/decode_test_morpheme_whole_xent/wer_11_penalty_0.0
 %WER 15.96 [ 2732 / 17119, 159 ins, 343 del, 2230 sub ] exp/tri2b_dnn_7Ls_2048/decode_test_morpheme/wer_11_penalty_0.0
 %WER 27.37 [ 4685 / 17119, 203 ins, 696 del, 3786 sub ] exp/tri2b_dnn_7Ls_2048/decode_test_morpheme_s_1stPass/wer_11_penalty_0.0
@@ -95,18 +87,6 @@ results for morpheme-based decoding:
 %WER 15.18 [ 2598 / 17119, 162 ins, 309 del, 2127 sub ] exp/tri2b_dnn_mpe_7Ls_2048/decode_test_morpheme_largeMem_it80/wer_11_penalty_0.0
 %WER 14.84 [ 2541 / 17119, 167 ins, 292 del, 2082 sub ] exp/tri2b_dnn_mpe_7Ls_2048/decode_test_morpheme_largeMem_it90/wer_11_penalty_0.0
 %WER 15.02 [ 2571 / 17119, 149 ins, 325 del, 2097 sub ] exp/tri2b_dnn_mpe_7Ls_2048/decode_test_morpheme_largeMem_it100/wer_11_penalty_0.5
-
-%WER 16.79 [ 2875 / 17119, 155 ins, 384 del, 2336 sub ] exp/tri2b_dnn_mpe_7Ls_2048_tri2b_4200_50000/decode_test_morpheme_largeMem_it1/wer_12_penalty_0.0
-%WER 15.81 [ 2706 / 17119, 170 ins, 327 del, 2209 sub ] exp/tri2b_dnn_mpe_7Ls_2048_tri2b_4200_50000/decode_test_morpheme_largeMem_it10/wer_11_penalty_0.0
-%WER 15.36 [ 2630 / 17119, 167 ins, 334 del, 2129 sub ] exp/tri2b_dnn_mpe_7Ls_2048_tri2b_4200_50000/decode_test_morpheme_largeMem_it20/wer_12_penalty_0.0
-%WER 15.19 [ 2601 / 17119, 167 ins, 322 del, 2112 sub ] exp/tri2b_dnn_mpe_7Ls_2048_tri2b_4200_50000/decode_test_morpheme_largeMem_it30/wer_12_penalty_0.0
-%WER 15.12 [ 2588 / 17119, 164 ins, 314 del, 2110 sub ] exp/tri2b_dnn_mpe_7Ls_2048_tri2b_4200_50000/decode_test_morpheme_largeMem_it40/wer_12_penalty_0.0
-%WER 15.16 [ 2595 / 17119, 156 ins, 334 del, 2105 sub ] exp/tri2b_dnn_mpe_7Ls_2048_tri2b_4200_50000/decode_test_morpheme_largeMem_it50/wer_14_penalty_0.0
-%WER 15.04 [ 2574 / 17119, 156 ins, 322 del, 2096 sub ] exp/tri2b_dnn_mpe_7Ls_2048_tri2b_4200_50000/decode_test_morpheme_largeMem_it60/wer_13_penalty_0.0
-%WER 14.91 [ 2552 / 17119, 155 ins, 321 del, 2076 sub ] exp/tri2b_dnn_mpe_7Ls_2048_tri2b_4200_50000/decode_test_morpheme_largeMem_it70/wer_13_penalty_0.0
-%WER 14.83 [ 2539 / 17119, 152 ins, 325 del, 2062 sub ] exp/tri2b_dnn_mpe_7Ls_2048_tri2b_4200_50000/decode_test_morpheme_largeMem_it80/wer_13_penalty_0.0
-%WER 14.78 [ 2530 / 17119, 151 ins, 318 del, 2061 sub ] exp/tri2b_dnn_mpe_7Ls_2048_tri2b_4200_50000/decode_test_morpheme_largeMem_it90/wer_13_penalty_0.0
-%WER 14.78 [ 2530 / 17119, 153 ins, 316 del, 2061 sub ] exp/tri2b_dnn_mpe_7Ls_2048_tri2b_4200_50000/decode_test_morpheme_largeMem_it100/wer_13_penalty_0.0
 
 %WER 16.72 [ 2863 / 17119, 154 ins, 356 del, 2353 sub ] exp/tri2b_dnn_mpe_7Ls_2048_tri4b/decode_test_morpheme_largeMem_it1/wer_12_penalty_0.0
 %WER 15.91 [ 2723 / 17119, 162 ins, 325 del, 2236 sub ] exp/tri2b_dnn_mpe_7Ls_2048_tri4b/decode_test_morpheme_largeMem_it10/wer_11_penalty_0.0

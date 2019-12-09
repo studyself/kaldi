@@ -1,0 +1,89 @@
+%WER 50.36 [ 8621 / 17119, 325 ins, 1626 del, 6670 sub ] exp/mono/decode_test_word/wer_8_0.0
+
+%WER 29.95 [ 5127 / 17119, 341 ins, 734 del, 4052 sub ] exp/tri1_2k_10k/decode_test_word/wer_12_0.5
+%WER 29.37 [ 5027 / 17119, 364 ins, 710 del, 3953 sub ] exp/tri1_2k_12k/decode_test_word/wer_13_0.0
+%WER 29.10 [ 4981 / 17119, 350 ins, 699 del, 3932 sub ] exp/tri1_2k_14k/decode_test_word/wer_13_0.0
+%WER 28.42 [ 4866 / 17119, 354 ins, 661 del, 3851 sub ] exp/tri1_2k_16k/decode_test_word/wer_13_0.0
+%WER 28.43 [ 4867 / 17119, 398 ins, 612 del, 3857 sub ] exp/tri1_2k_18k/decode_test_word/wer_12_0.0
+%WER 28.04 [ 4801 / 17119, 355 ins, 634 del, 3812 sub ] exp/tri1_2k_20k/decode_test_word/wer_13_0.0
+%WER 27.86 [ 4770 / 17119, 351 ins, 648 del, 3771 sub ] exp/tri1_2k_22k/decode_test_word/wer_13_0.0
+%WER 27.62 [ 4729 / 17119, 428 ins, 511 del, 3790 sub ] exp/tri1_2k_30k/decode_test_word/wer_11_0.0
+%WER 27.40 [ 4691 / 17119, 358 ins, 626 del, 3707 sub ] exp/tri1_2k_40k/decode_test_word/wer_13_0.0
+
+%WER 29.17 [ 4993 / 17119, 384 ins, 641 del, 3968 sub ] exp/tri1_4k_10k/decode_test_word/wer_13_0.0
+%WER 28.82 [ 4934 / 17119, 392 ins, 607 del, 3935 sub ] exp/tri1_4k_12k/decode_test_word/wer_13_0.0
+%WER 28.45 [ 4870 / 17119, 402 ins, 598 del, 3870 sub ] exp/tri1_4k_14k/decode_test_word/wer_13_0.0
+%WER 27.84 [ 4766 / 17119, 377 ins, 605 del, 3784 sub ] exp/tri1_4k_16k/decode_test_word/wer_13_0.0
+%WER 27.27 [ 4668 / 17119, 363 ins, 568 del, 3737 sub ] exp/tri1_4k_18k/decode_test_word/wer_13_0.0
+%WER 27.25 [ 4665 / 17119, 339 ins, 643 del, 3683 sub ] exp/tri1_4k_20k/decode_test_word/wer_14_0.0
+%WER 27.15 [ 4648 / 17119, 405 ins, 524 del, 3719 sub ] exp/tri1_4k_22k/decode_test_word/wer_12_0.0
+%WER 26.49 [ 4535 / 17119, 419 ins, 506 del, 3610 sub ] exp/tri1_4k_30k/decode_test_word/wer_12_0.0
+%WER 26.14 [ 4475 / 17119, 323 ins, 610 del, 3542 sub ] exp/tri1_4k_32k/decode_test_word/wer_13_0.5
+%WER 26.15 [ 4476 / 17119, 382 ins, 518 del, 3576 sub ] exp/tri1_4k_34k/decode_test_word/wer_13_0.0
+%WER 25.85 [ 4425 / 17119, 371 ins, 524 del, 3530 sub ] exp/tri1_4k_36k/decode_test_word/wer_13_0.0
+%WER 26.16 [ 4478 / 17119, 413 ins, 491 del, 3574 sub ] exp/tri1_4k_38k/decode_test_word/wer_12_0.0
+%WER 26.20 [ 4486 / 17119, 355 ins, 569 del, 3562 sub ] exp/tri1_4k_40k/decode_test_word/wer_14_0.0
+
+%WER 26.44 [ 4526 / 17119, 380 ins, 510 del, 3636 sub ] exp/tri2b_2.5k_15k/decode_test_word/wer_13_0.0
+%WER 25.85 [ 4425 / 17119, 392 ins, 448 del, 3585 sub ] exp/tri2b_2.5k_19k/decode_test_word/wer_12_0.0
+%WER 25.18 [ 4311 / 17119, 387 ins, 457 del, 3467 sub ] exp/tri2b_2.5k_23k/decode_test_word/wer_13_0.0
+%WER 24.90 [ 4263 / 17119, 404 ins, 426 del, 3433 sub ] exp/tri2b_2.5k_27k/decode_test_word/wer_12_0.0
+%WER 24.60 [ 4211 / 17119, 363 ins, 457 del, 3391 sub ] exp/tri2b_2.5k_31k/decode_test_word/wer_13_0.0
+%WER 24.62 [ 4215 / 17119, 374 ins, 452 del, 3389 sub ] exp/tri2b_2.5k_35k/decode_test_word/wer_13_0.0
+%WER 24.13 [ 4131 / 17119, 383 ins, 451 del, 3297 sub ] exp/tri2b_2.5k_39k/decode_test_word/wer_13_0.0
+%WER 24.28 [ 4157 / 17119, 393 ins, 451 del, 3313 sub ] exp/tri2b_2.5k_44k/decode_test_word/wer_13_0.0
+%WER 24.05 [ 4117 / 17119, 374 ins, 447 del, 3296 sub ] exp/tri2b_2.5k_49k/decode_test_word/wer_13_0.0
+
+%WER 25.60 [ 4383 / 17119, 374 ins, 521 del, 3488 sub ] exp/tri2b_4.5k_15k/decode_test_word/wer_14_0.0
+%WER 25.15 [ 4305 / 17119, 428 ins, 449 del, 3428 sub ] exp/tri2b_4.5k_19k/decode_test_word/wer_13_0.0
+%WER 24.70 [ 4229 / 17119, 353 ins, 505 del, 3371 sub ] exp/tri2b_4.5k_23k/decode_test_word/wer_15_0.0
+%WER 24.39 [ 4175 / 17119, 383 ins, 445 del, 3347 sub ] exp/tri2b_4.5k_27k/decode_test_word/wer_14_0.0
+%WER 24.22 [ 4147 / 17119, 418 ins, 409 del, 3320 sub ] exp/tri2b_4.5k_31k/decode_test_word/wer_13_0.0
+%WER 24.00 [ 4108 / 17119, 404 ins, 416 del, 3288 sub ] exp/tri2b_4.5k_35k/decode_test_word/wer_13_0.0
+%WER 23.87 [ 4086 / 17119, 390 ins, 440 del, 3256 sub ] exp/tri2b_4.5k_39k/decode_test_word/wer_14_0.0
+%WER 23.98 [ 4105 / 17119, 380 ins, 445 del, 3280 sub ] exp/tri2b_4.5k_44k/decode_test_word/wer_14_0.0
+%WER 23.77 [ 4069 / 17119, 379 ins, 443 del, 3247 sub ] exp/tri2b_4.5k_49k/decode_test_word/wer_14_0.0
+
+%WER 27.55 [ 4716 / 17119, 167 ins, 826 del, 3723 sub ] exp/tri1_2k_10k/decode_test_morpheme/wer_13_penalty_0.0
+%WER 26.98 [ 4619 / 17119, 174 ins, 763 del, 3682 sub ] exp/tri1_2k_12k/decode_test_morpheme/wer_12_penalty_0.0
+%WER 26.52 [ 4540 / 17119, 164 ins, 725 del, 3651 sub ] exp/tri1_2k_14k/decode_test_morpheme/wer_12_penalty_0.0
+%WER 25.78 [ 4413 / 17119, 167 ins, 709 del, 3537 sub ] exp/tri1_2k_16k/decode_test_morpheme/wer_12_penalty_0.0
+%WER 26.04 [ 4458 / 17119, 182 ins, 724 del, 3552 sub ] exp/tri1_2k_18k/decode_test_morpheme/wer_12_penalty_0.0
+%WER 25.26 [ 4325 / 17119, 165 ins, 668 del, 3492 sub ] exp/tri1_2k_20k/decode_test_morpheme/wer_12_penalty_0.0
+%WER 25.26 [ 4324 / 17119, 184 ins, 663 del, 3477 sub ] exp/tri1_2k_22k/decode_test_morpheme/wer_11_penalty_0.0
+%WER 24.73 [ 4234 / 17119, 175 ins, 647 del, 3412 sub ] exp/tri1_2k_30k/decode_test_morpheme/wer_11_penalty_0.0
+%WER 24.45 [ 4186 / 17119, 158 ins, 694 del, 3334 sub ] exp/tri1_2k_40k/decode_test_morpheme/wer_12_penalty_0.0
+
+%WER 27.45 [ 4699 / 17119, 190 ins, 780 del, 3729 sub ] exp/tri1_4k_10k/decode_test_morpheme/wer_13_penalty_0.0
+%WER 26.56 [ 4546 / 17119, 194 ins, 703 del, 3649 sub ] exp/tri1_4k_12k/decode_test_morpheme/wer_12_penalty_0.0
+%WER 25.84 [ 4424 / 17119, 171 ins, 722 del, 3531 sub ] exp/tri1_4k_14k/decode_test_morpheme/wer_13_penalty_0.0
+%WER 25.39 [ 4346 / 17119, 164 ins, 723 del, 3459 sub ] exp/tri1_4k_16k/decode_test_morpheme/wer_13_penalty_0.0
+%WER 25.12 [ 4301 / 17119, 169 ins, 692 del, 3440 sub ] exp/tri1_4k_18k/decode_test_morpheme/wer_13_penalty_0.0
+%WER 25.05 [ 4288 / 17119, 164 ins, 739 del, 3385 sub ] exp/tri1_4k_20k/decode_test_morpheme/wer_14_penalty_0.0
+%WER 24.49 [ 4193 / 17119, 156 ins, 729 del, 3308 sub ] exp/tri1_4k_22k/decode_test_morpheme/wer_14_penalty_0.0
+%WER 23.86 [ 4085 / 17119, 167 ins, 646 del, 3272 sub ] exp/tri1_4k_30k/decode_test_morpheme/wer_13_penalty_0.0
+%WER 23.35 [ 3997 / 17119, 167 ins, 600 del, 3230 sub ] exp/tri1_4k_32k/decode_test_morpheme/wer_12_penalty_0.0
+%WER 23.28 [ 3985 / 17119, 157 ins, 635 del, 3193 sub ] exp/tri1_4k_34k/decode_test_morpheme/wer_13_penalty_0.0
+%WER 23.48 [ 4020 / 17119, 172 ins, 622 del, 3226 sub ] exp/tri1_4k_36k/decode_test_morpheme/wer_12_penalty_0.0
+%WER 23.47 [ 4017 / 17119, 149 ins, 642 del, 3226 sub ] exp/tri1_4k_38k/decode_test_morpheme/wer_13_penalty_0.0
+%WER 23.27 [ 3984 / 17119, 162 ins, 625 del, 3197 sub ] exp/tri1_4k_40k/decode_test_morpheme/wer_13_penalty_0.0
+
+%WER 23.68 [ 4054 / 17119, 161 ins, 617 del, 3276 sub ] exp/tri2b_2.5k_15k/decode_test_morpheme/wer_13_penalty_0.0
+%WER 22.91 [ 3922 / 17119, 159 ins, 583 del, 3180 sub ] exp/tri2b_2.5k_19k/decode_test_morpheme/wer_12_penalty_0.0
+%WER 22.48 [ 3849 / 17119, 159 ins, 572 del, 3118 sub ] exp/tri2b_2.5k_23k/decode_test_morpheme/wer_13_penalty_0.0
+%WER 22.02 [ 3770 / 17119, 157 ins, 578 del, 3035 sub ] exp/tri2b_2.5k_27k/decode_test_morpheme/wer_14_penalty_0.0
+%WER 21.96 [ 3760 / 17119, 150 ins, 584 del, 3026 sub ] exp/tri2b_2.5k_31k/decode_test_morpheme/wer_14_penalty_0.0
+%WER 21.50 [ 3681 / 17119, 158 ins, 531 del, 2992 sub ] exp/tri2b_2.5k_35k/decode_test_morpheme/wer_12_penalty_0.0
+%WER 21.33 [ 3651 / 17119, 161 ins, 518 del, 2972 sub ] exp/tri2b_2.5k_39k/decode_test_morpheme/wer_12_penalty_0.0
+%WER 21.19 [ 3627 / 17119, 150 ins, 540 del, 2937 sub ] exp/tri2b_2.5k_44k/decode_test_morpheme/wer_13_penalty_0.0
+%WER 21.36 [ 3656 / 17119, 157 ins, 538 del, 2961 sub ] exp/tri2b_2.5k_49k/decode_test_morpheme/wer_12_penalty_0.0
+
+%WER 23.00 [ 3937 / 17119, 183 ins, 592 del, 3162 sub ] exp/tri2b_4.5k_15k/decode_test_morpheme/wer_13_penalty_0.0
+%WER 22.69 [ 3885 / 17119, 166 ins, 602 del, 3117 sub ] exp/tri2b_4.5k_19k/decode_test_morpheme/wer_14_penalty_0.0
+%WER 21.92 [ 3752 / 17119, 167 ins, 574 del, 3011 sub ] exp/tri2b_4.5k_23k/decode_test_morpheme/wer_14_penalty_0.0
+%WER 21.86 [ 3743 / 17119, 174 ins, 573 del, 2996 sub ] exp/tri2b_4.5k_27k/decode_test_morpheme/wer_14_penalty_0.0
+%WER 21.23 [ 3635 / 17119, 157 ins, 560 del, 2918 sub ] exp/tri2b_4.5k_31k/decode_test_morpheme/wer_15_penalty_0.0
+%WER 21.12 [ 3616 / 17119, 148 ins, 575 del, 2893 sub ] exp/tri2b_4.5k_35k/decode_test_morpheme/wer_15_penalty_0.0
+%WER 21.06 [ 3606 / 17119, 159 ins, 530 del, 2917 sub ] exp/tri2b_4.5k_39k/decode_test_morpheme/wer_14_penalty_0.0
+%WER 20.83 [ 3566 / 17119, 155 ins, 553 del, 2858 sub ] exp/tri2b_4.5k_44k/decode_test_morpheme/wer_14_penalty_0.0
+%WER 20.81 [ 3562 / 17119, 154 ins, 533 del, 2875 sub ] exp/tri2b_4.5k_49k/decode_test_morpheme/wer_14_penalty_0.0
