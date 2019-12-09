@@ -69,7 +69,7 @@ fi
 
  #xEnt training
  if [ $stage -le 1 ]; then
-   outdir=exp/tri2b_dnn_7Ls_2048_tri2b_4200_50000
+   outdir=exp/tri2b_dnn_7Ls_2048
     #NN training
     (tail --pid=$$ -F $outdir/log/train_nnet.log 2>/dev/null)& # forward log
     $cuda_cmd $outdir/log/train_nnet.log \
@@ -116,7 +116,7 @@ fi
  
   if [ $stage -le 2 ]; then
   #MPE training
-  srcdir=exp/tri2b_dnn_7Ls_2048_tri2b_4200_50000
+  srcdir=exp/tri2b_dnn_7Ls_2048
   acwt=0.1
     # generate lattices and alignments
     steps/nnet/align.sh --nj $nTrn --cmd "$train_cmd" \
@@ -130,15 +130,15 @@ fi
   if [ $stage -le 3 ]; then
     nDcd=32
     nDcdM=3 
-    srcdir=exp/tri2b_dnn_7Ls_2048_tri2b_4200_50000
+    srcdir=exp/tri2b_dnn_7Ls_2048
    # srcdir=exp/tri2b_dnn_6Ls_1024
     acwt=0.1
-    outdir=exp/tri2b_dnn_mpe_7Ls_2048_tri2b_4200_50000
+    outdir=exp/tri2b_dnn_mpe_7Ls_2048
     # outdir=exp/tri2b_dnn_mpe_6Ls_1024
 
     #Re-train the DNN by 3 iteration of MPE
-#    steps/nnet/train_mpe.sh --cmd "$cuda_cmd" --num-iters 100 --acwt $acwt --do-smbr false  \
-#      data/fbank/train data/lang $srcdir ${srcdir}_ali ${srcdir}_denlats $outdir || exit 1;
+    steps/nnet/train_mpe.sh --cmd "$cuda_cmd" --num-iters 100 --acwt $acwt --do-smbr false  \
+      data/fbank/train data/lang $srcdir ${srcdir}_ali ${srcdir}_denlats $outdir || exit 1;
 
     ###  #Decode (reuse HCLG graph)
     for ITER in 1 10 20 30 40 50 60 70 80 90 100; do
@@ -161,12 +161,12 @@ fi
 ##     local/wer_morph-to-word.sh $outdir/decode_test_morpheme_2ndRescoring_it${ITER}  || exit 1;
 ##    )&
   
-       ( ### Biglm used, Big G - Small Gp = F, HCLG composing F get the result
-        local/nnet/decode_biglm.sh --nj $nDcdM --cmd "$decode_cmd" --nnet $outdir/${ITER}.nnet --config conf/decode_dnn.config --acwt $acwt \
-          $gmmdir/graph_morpheme_s data/graph_morpheme_s/lang/G.fst data/graph_morpheme/lang/G.fst \
-         data/fbank/testM $outdir/decode_test_morpheme_largeMem_it${ITER} || exit 1;
-        local/wer_morph-to-word.sh $outdir/decode_test_morpheme_largeMem_it${ITER} || exit 1;
-        )&
+#       ( ### Biglm used, Big G - Small Gp = F, HCLG composing F get the result
+#        local/nnet/decode_biglm.sh --nj $nDcdM --cmd "$decode_cmd" --nnet $outdir/${ITER}.nnet --config conf/decode_dnn.config --acwt $acwt \
+#          $gmmdir/graph_morpheme_s data/graph_morpheme_s/lang/G.fst data/graph_morpheme/lang/G.fst \
+#         data/fbank/testM $outdir/decode_test_morpheme_largeMem_it${ITER} || exit 1;
+#        local/wer_morph-to-word.sh $outdir/decode_test_morpheme_largeMem_it${ITER} || exit 1;
+#        )&
   
 #     ( ### morpheme decoding with the Big LM as a whole 
 # #      ####utils/mkgraph.sh $opt data/graph_morpheme/lang $srcdir $srcdir/graph_morpheme || exit 1;
