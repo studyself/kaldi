@@ -15,9 +15,9 @@ cmd=run.pl
 config=
 stage=-5
 scale_opts="--transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1"
-realign_iters="10 20 30 40 50 60 70";
+realign_iters="10 20 30";
 mllt_iters="2 4 6 12";
-num_iters=75    # Number of iterations of training
+num_iters=35    # Number of iterations of training
 max_iter_inc=25  # Last iter to increase #Gauss on.
 dim=40
 beam=10
