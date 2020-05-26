@@ -3,10 +3,10 @@ MLDG-Decoder for THUYG-20
 This is the source code for our paper: Improving Uyghur ASR systems with decoders using morpheme-based LMs. 
 
 Follow Kaldi's guide to build the toolkit. 
-The two morpheme-based decoders have been added into src/bin and src/bin/Makefile.
-2. src/bin/MLDG-Decoder.cc
-3. It will be built while the toolkit is built. 
-6. MLDG-Decoder is used in decode_biglm.sh.
+The morpheme-based decoder has been added into src/bin and src/bin/Makefile.
+1. src/bin/MLDG-Decoder.cc
+2. It will be built while the toolkit is built. 
+3. MLDG-Decoder is used in decode_biglm.sh.
 
 THUYG-20 Data:
 --------------------------
