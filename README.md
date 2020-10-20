@@ -23,4 +23,5 @@ https://github.com/wangdong99/kaldi
 
 THUYG-20 recipes:
 ------------------------------------
-You can run the scripts in egs/thuyg20 to reproduce our experimental results.
+You can run the scripts in egs/thuyg20 to reproduce our experimental results:
+https://github.com/studyself/kaldi/tree/master/egs/thuyg20/s5
