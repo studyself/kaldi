@@ -1,10 +1,12 @@
-UPDATE @ 20，OCT, 2020
+UPDATE @ 15th，May, 2021
 ### results are added as reviewers asked for
 ### the same settings as reference[20], using our own BigLM wrapper for DNN-HMM
 %WER 16.60 [ 2842 / 17119, 170 ins, 345 del, 2327 sub ] exp/tri4b_dnn_org_mpe_4Ls_1024/decode_test_morpheme_largeMem_it4/wer_10_penalty_0.0
+%WER 17.23 [ 2950 / 17119, 179 ins, 369 del, 2402 sub ] exp/tri4b_dnn_org_xEnT_4Ls_1024/decode_test_morpheme/wer_11_penalty_0.0
 
 ### GMM-HMM optimized, but DNN with 4 hidden layers and 1024 nodes per layer
 %WER 15.26 [ 2612 / 17119, 166 ins, 320 del, 2126 sub ] exp/tri2b_dnn_mpe_4Ls_1024/decode_test_morpheme_largeMem_it60/wer_11_penalty_0.0
+%WER 16.55 [ 2833 / 17119, 150 ins, 380 del, 2303 sub ] exp/tri4b_dnn_xEnt_4Ls_1024/decode_test_morpheme/wer_11_penalty_0.0
 
 ### Results on 28, Nov, 2019
 results for word-based decoding:
